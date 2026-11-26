@@ -105,3 +105,7 @@ See `paper/` for the ACL-format paper.
 
 ## License
 MIT (code). Datasets keep their own licences.
+
+## Team
+
+Prince Chauhan (S24CSEU2811), Shourya Dagar (S24CSEU2802), Ronit (S24CSEU2825), Aaryan Singh (S24CSEU2225), Gyankush Bordoloi (S24CSEU0770). See [CONTRIBUTORS.md](CONTRIBUTORS.md) for individual contributions and `docs/` for the Milestone-2 progress report.
