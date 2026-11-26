@@ -12,12 +12,12 @@ CSET-346 Natural Language Processing, Bennett University. Supervisor: Dr. Pradee
 
 ## Individual contributions
 
-Each member edits their own row and commits it from their own GitHub account.
+Each member adds their GitHub username above and commits from their own account.
 
 | Member | What I did |
 |---|---|
-| Prince Chauhan | |
-| Shourya Dagar | |
-| Ronit | |
-| Aaryan Singh | |
-| Gyankush Bordoloi | |
+| Prince Chauhan | Dataset and infrastructure: SynHateMM generator (14 functionalities, gold rationales, counterfactuals, held-out templates) in `rxhate/data/synthetic.py`; real-corpus loaders in `rxhate/data/loaders.py`; GitHub repository and Vercel project page. |
+| Shourya Dagar | Representation and model: code-mixed text normalisation and hashed n-gram features, image descriptor, context features (`text.py`, `vision.py`, `features.py`); fusion policy with label and rationale heads and SFT training (`model.py`). |
+| Ronit | Reward optimisation: composite reward (`rewards.py`) and the GRPO trainer with group-normalised advantage, PPO clip, KL and counterfactual pairing (`grpo.py`); reward ablations. |
+| Aaryan Singh | Explainability and LLM path: Integrated Gradients, occlusion, LIME, KernelSHAP, modality Shapley (`xai.py`); Qwen2.5 + LoRA prompts, TRL reward wrappers, SFT/GRPO scripts (`llm/`). |
+| Gyankush Bordoloi | Evaluation and writing: metrics, fairness and bias measures, baselines, unit tests (`metrics.py`, `baselines.py`, `tests/`); experiment and report scripts; paper, slides and progress report. |
