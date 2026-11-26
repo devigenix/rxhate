@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+data/
+results/models/
+results_smoke/
+runs/
+*.log
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk

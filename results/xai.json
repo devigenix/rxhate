@@ -1,0 +1,743 @@
+{
+ "grpo": {
+  "Integrated Gradients": {
+   "auprc": 0.702746003335289,
+   "token_f1": 0.5948017153786385,
+   "iou_f1": 0.4346153846153846,
+   "comprehensiveness": 0.258305240584403,
+   "sufficiency": -0.027351862155526548,
+   "sec_per_post": 0.012006230354309082,
+   "n": 300
+  },
+  "Occlusion": {
+   "auprc": 0.675991243544815,
+   "token_f1": 0.5656218140833525,
+   "iou_f1": 0.38846153846153847,
+   "comprehensiveness": 0.25534282875917735,
+   "sufficiency": -0.02496813122562054,
+   "sec_per_post": 0.0020151019096374513,
+   "n": 300
+  },
+  "LIME": {
+   "auprc": 0.6814888481227767,
+   "token_f1": 0.5856959066574451,
+   "iou_f1": 0.39615384615384613,
+   "comprehensiveness": 0.26471213959365125,
+   "sufficiency": -0.028650553255123182,
+   "sec_per_post": 0.013580455780029296,
+   "n": 300
+  },
+  "KernelSHAP": {
+   "auprc": 0.6893092912378627,
+   "token_f1": 0.588248183440491,
+   "iou_f1": 0.41923076923076924,
+   "comprehensiveness": 0.26093186883076724,
+   "sufficiency": -0.03223923291435846,
+   "sec_per_post": 0.01728454271952311,
+   "n": 300
+  },
+  "Learned rationale (ours)": {
+   "auprc": 0.9669406288156288,
+   "token_f1": 0.7686606769299077,
+   "iou_f1": 0.8115384615384615,
+   "comprehensiveness": 0.11076648341436583,
+   "sufficiency": 0.07595576181943495,
+   "sec_per_post": 0.0015483474731445312,
+   "n": 300
+  },
+  "Random": {
+   "auprc": 0.6635410092552949,
+   "token_f1": 0.5691876926492311,
+   "iou_f1": 0.4423076923076923,
+   "comprehensiveness": 0.05233606546315835,
+   "sufficiency": 0.16194026554333965,
+   "sec_per_post": 0.001280829111735026,
+   "n": 300
+  }
+ },
+ "grpo_modality_shapley": {
+  "H_DEROG": [
+   4.136410905666469,
+   0.11165590269198798,
+   0.33522463579385603
+  ],
+  "H_SARC": [
+   5.608812449129131,
+   0.3418220235647325,
+   0.42177157971839635
+  ],
+  "N_POSITIVE": [
+   2.3350115972412517,
+   -0.022717314879914796,
+   0.6105012943659864
+  ],
+  "H_THREAT": [
+   4.762746736090508,
+   0.16461474184731156,
+   0.373530875662917
+  ],
+  "MM_HATE": [
+   0.6636537659873641,
+   3.764784934968532,
+   0.29466228823388074
+  ],
+  "N_COUNTER": [
+   4.583876427770684,
+   -0.3069863251900118,
+   0.5469946864817381
+  ],
+  "H_IMPLICIT": [
+   4.318161569280495,
+   0.14835990709606636,
+   0.34374295809446653
+  ],
+  "CTX_HATE": [
+   0.9447906690094402,
+   0.07743213099751721,
+   2.743785598078508
+  ],
+  "MM_BENIGN": [
+   2.671503115049015,
+   -0.46745272967502305,
+   0.32002195051076343
+  ],
+  "N_NONPROT": [
+   -3.089175360608317,
+   4.446638466252503,
+   1.0915109435281674
+  ],
+  "N_SARC": [
+   -4.143069512489862,
+   4.833414166461465,
+   0.5883621370243265
+  ],
+  "MM_EDU": [
+   -2.6522027212771437,
+   4.368976624035377,
+   0.42206918766378027
+  ],
+  "N_NEUTRAL": [
+   -3.5152216122773368,
+   3.779018877446195,
+   0.7932993892555488
+  ],
+  "CTX_BENIGN": [
+   -0.03104053492616067,
+   4.289958739327269,
+   -1.2892230160326041
+  ]
+ },
+ "grpo_modality_shapley_abs_share": {
+  "H_DEROG": [
+   0.6627902386435117,
+   0.21592560619943546,
+   0.12128415515705288
+  ],
+  "H_SARC": [
+   0.7253204265401834,
+   0.16835536212077432,
+   0.10632421133904241
+  ],
+  "N_POSITIVE": [
+   0.5547382172257135,
+   0.2661220257186604,
+   0.1791397570556262
+  ],
+  "H_THREAT": [
+   0.6986225098373698,
+   0.18449401175791785,
+   0.11688347840471232
+  ],
+  "MM_HATE": [
+   0.22646210506158918,
+   0.6605912747420916,
+   0.11294662019631922
+  ],
+  "N_COUNTER": [
+   0.6890656390463351,
+   0.17334870973762573,
+   0.13758565121603925
+  ],
+  "H_IMPLICIT": [
+   0.6736394733888953,
+   0.19812120356688145,
+   0.12823932304422322
+  ],
+  "CTX_HATE": [
+   0.2626918430631825,
+   0.2119189336700381,
+   0.5253892232667794
+  ],
+  "MM_BENIGN": [
+   0.6114933237577694,
+   0.19634669527675844,
+   0.19215998096547215
+  ],
+  "N_NONPROT": [
+   0.3580687458539981,
+   0.5154133621484165,
+   0.12651789199758542
+  ],
+  "N_SARC": [
+   0.4238588890411181,
+   0.49448495920618996,
+   0.08165615175269196
+  ],
+  "MM_EDU": [
+   0.3410806366864087,
+   0.5618625290741137,
+   0.09705683423947763
+  ],
+  "N_NEUTRAL": [
+   0.43464658782258475,
+   0.4672643268527827,
+   0.09808908532463273
+  ],
+  "CTX_BENIGN": [
+   0.04106993424803889,
+   0.73734296467833,
+   0.22158710107363108
+  ]
+ },
+ "sft": {
+  "Integrated Gradients": {
+   "auprc": 0.7326365483897446,
+   "token_f1": 0.5829409457814128,
+   "iou_f1": 0.44357976653696496,
+   "comprehensiveness": 0.3324551988818226,
+   "sufficiency": -0.030654552586426825,
+   "sec_per_post": 0.012538825670878093,
+   "n": 300
+  },
+  "Occlusion": {
+   "auprc": 0.7076349291239509,
+   "token_f1": 0.5693208650407093,
+   "iou_f1": 0.42023346303501946,
+   "comprehensiveness": 0.3314926564952074,
+   "sufficiency": -0.02652018997626365,
+   "sec_per_post": 0.002086787223815918,
+   "n": 300
+  },
+  "LIME": {
+   "auprc": 0.7186908538520544,
+   "token_f1": 0.5830608215822223,
+   "iou_f1": 0.44357976653696496,
+   "comprehensiveness": 0.3436384028391087,
+   "sufficiency": -0.03537164677430818,
+   "sec_per_post": 0.013873332341512045,
+   "n": 300
+  },
+  "KernelSHAP": {
+   "auprc": 0.7236918177246137,
+   "token_f1": 0.585386554647255,
+   "iou_f1": 0.4591439688715953,
+   "comprehensiveness": 0.3373071703401557,
+   "sufficiency": -0.0461092334880325,
+   "sec_per_post": 0.017923691272735597,
+   "n": 300
+  },
+  "Learned rationale (ours)": {
+   "auprc": 0.9875616083009079,
+   "token_f1": 0.7788988573035266,
+   "iou_f1": 0.8132295719844358,
+   "comprehensiveness": 0.1337997165960395,
+   "sufficiency": 0.09949325830334668,
+   "sec_per_post": 0.0018889681498209636,
+   "n": 300
+  },
+  "Random": {
+   "auprc": 0.6534809796260601,
+   "token_f1": 0.5617024134533862,
+   "iou_f1": 0.44357976653696496,
+   "comprehensiveness": 0.08086131094373195,
+   "sufficiency": 0.21022265083927885,
+   "sec_per_post": 0.001242360273996989,
+   "n": 300
+  }
+ },
+ "sft_modality_shapley": {
+  "H_DEROG": [
+   4.7688223424921095,
+   -0.5106358630259686,
+   -0.07692617581689455
+  ],
+  "H_SARC": [
+   6.669270893265634,
+   -0.4527610050266623,
+   -0.05214412703186416
+  ],
+  "H_THREAT": [
+   5.121266051709167,
+   -0.45679660873982003,
+   -0.02712731885538491
+  ],
+  "MM_HATE": [
+   1.765593681291757,
+   2.1127077469490003,
+   -0.04668101026659512
+  ],
+  "N_COUNTER": [
+   5.350870435011431,
+   -0.9198266870136677,
+   0.012937306144313411
+  ],
+  "H_IMPLICIT": [
+   4.549277303490227,
+   -0.630250964169976,
+   -0.032659014253445966
+  ],
+  "CTX_HATE": [
+   1.1924899047513875,
+   -0.2054600823095503,
+   1.682079405832607
+  ],
+  "MM_BENIGN": [
+   3.4772432760047973,
+   -0.6613394611468193,
+   0.014196350030304356
+  ],
+  "N_NONPROT": [
+   -1.9413126938575929,
+   2.6148491390258397,
+   0.5038435710396479
+  ],
+  "MM_EDU": [
+   -1.289077472717175,
+   2.53949294620058,
+   0.02965916305531254
+  ],
+  "N_POSITIVE": [
+   2.9726567885779627,
+   -0.41433301543654666,
+   0.2311580640250487
+  ],
+  "N_SARC": [
+   -0.6098866531451693,
+   1.6448970459644097,
+   0.0012328744736826575
+  ],
+  "CTX_BENIGN": [
+   0.7394630955285759,
+   1.9828630834357077,
+   -1.4448830785760456
+  ]
+ },
+ "sft_modality_shapley_abs_share": {
+  "H_DEROG": [
+   0.7082048533102017,
+   0.19477947163758552,
+   0.09701567505221285
+  ],
+  "H_SARC": [
+   0.7775927188076245,
+   0.1531910906980251,
+   0.06921619049435046
+  ],
+  "H_THREAT": [
+   0.7329898537402907,
+   0.17232707386497342,
+   0.09468307239473578
+  ],
+  "MM_HATE": [
+   0.4280387871289091,
+   0.4554750143626081,
+   0.11648619850848294
+  ],
+  "N_COUNTER": [
+   0.7211915317386904,
+   0.1807644824656572,
+   0.09804398579565242
+  ],
+  "H_IMPLICIT": [
+   0.6961349549204262,
+   0.20378438562954493,
+   0.10008065945002884
+  ],
+  "CTX_HATE": [
+   0.3269930743789429,
+   0.23072511297078638,
+   0.44228181265027067
+  ],
+  "MM_BENIGN": [
+   0.6571761422763239,
+   0.2076902956739912,
+   0.1351335620496849
+  ],
+  "N_NONPROT": [
+   0.38365822541463507,
+   0.5167680526583068,
+   0.09957372192705806
+  ],
+  "MM_EDU": [
+   0.29351536981268384,
+   0.5782276294609506,
+   0.12825700072636553
+  ],
+  "N_POSITIVE": [
+   0.5917519562502279,
+   0.2723906695472756,
+   0.13585737420249644
+  ],
+  "N_SARC": [
+   0.27033784249930315,
+   0.7291156746033108,
+   0.000546482897386018
+  ],
+  "CTX_BENIGN": [
+   0.17744803532257453,
+   0.4758251772089029,
+   0.3467267874685226
+  ]
+ },
+ "cases": [
+  {
+   "id": "p00071",
+   "func": "MM_HATE",
+   "lang": "en",
+   "text": "trans people on their way to work",
+   "parent": "anyone else seeing this",
+   "image_symbol": "mark_a",
+   "image_path": "images/p00071.png",
+   "label": 1,
+   "tokens": [
+    "trans",
+    "people",
+    "on",
+    "their",
+    "way",
+    "to",
+    "work"
+   ],
+   "ig": [
+    0.7018559838408241,
+    0.793364915455824,
+    0.05686561038581342,
+    -0.6230609897379377,
+    0.5155719929513964,
+    -0.2924503949097972,
+    0.28899813536550334
+   ],
+   "rationale": [
+    0.9080841063749147,
+    0.9440350370085842,
+    0.3389541767869099,
+    0.24472865932798632,
+    0.47014963932534914,
+    0.2950792846213188,
+    0.3153182154405783
+   ],
+   "modality_phi": [
+    -0.3605669097645491,
+    4.921032952438379,
+    0.25760360377818636
+   ],
+   "p": 0.990690376651237,
+   "explanation": "Prediction: HATEFUL  (p_hate = 0.99)\nEvidence (model rationale): trans people\nMost influential words (IG): people (+0.79), trans (+0.70), way (+0.52), work (+0.29)\nModality contributions to the hate logit: text -0.36 (7%), image +4.92 (89%), context +0.26 (5%)\nTargeted identity mention(s): trans\nNote: the decision is driven mainly by the image, not by the words alone."
+  },
+  {
+   "id": "p00175",
+   "func": "MM_BENIGN",
+   "lang": "en",
+   "text": "disabled people at the market today",
+   "parent": "what does everyone think about this",
+   "image_symbol": "triangle_up",
+   "image_path": "images/p00175.png",
+   "label": 0,
+   "tokens": [
+    "disabled",
+    "people",
+    "at",
+    "the",
+    "market",
+    "today"
+   ],
+   "ig": [
+    1.0705331023848437,
+    0.49893634770988426,
+    -0.43754245147096116,
+    -1.256045213631057,
+    -1.0937831367773576,
+    -1.0598218683948502
+   ],
+   "rationale": [
+    0.9315270374593952,
+    0.9385708806146309,
+    0.3060620325877593,
+    0.27733184113448983,
+    0.24100868379031198,
+    0.2492710665374618
+   ],
+   "modality_phi": [
+    -1.7156817581582944,
+    -2.1293392351373512,
+    0.29067812244876345
+   ],
+   "p": 0.024008191686071757,
+   "explanation": "Prediction: NOT HATEFUL  (p_hate = 0.02)\nMost influential words (IG): disabled (+1.07), people (+0.50), at (-0.44), today (-1.06)\nModality contributions to the hate logit: text -1.72 (41%), image -2.13 (51%), context +0.29 (7%)\nTargeted identity mention(s): disabled\nNote: the decision is driven mainly by the image, not by the words alone."
+  },
+  {
+   "id": "p00202",
+   "func": "CTX_HATE",
+   "lang": "en",
+   "text": "we do not want them here",
+   "parent": "more women are arriving in the city this year",
+   "image_symbol": "star",
+   "image_path": "images/p00202.png",
+   "label": 1,
+   "tokens": [
+    "we",
+    "do",
+    "not",
+    "want",
+    "them",
+    "here"
+   ],
+   "ig": [
+    -0.23289422898460507,
+    0.7703544345912804,
+    2.365935131564243,
+    -0.1986515344587212,
+    -1.548189188464646,
+    -0.1711391760649552
+   ],
+   "rationale": [
+    0.5506792422394603,
+    0.8084216169673305,
+    0.8508435933995495,
+    0.7693051899301013,
+    0.5949375753121047,
+    0.5905769463597533
+   ],
+   "modality_phi": [
+    0.28027372643594184,
+    -1.176693542862853,
+    3.049716850871352
+   ],
+   "p": 0.8810677796991173,
+   "explanation": "Prediction: HATEFUL  (p_hate = 0.88)\nEvidence (model rationale): we do not want them here\nMost influential words (IG): not (+2.37), do (+0.77), here (-0.17), want (-0.20)\nModality contributions to the hate logit: text +0.28 (6%), image -1.18 (26%), context +3.05 (68%)\nNote: the decision is driven mainly by the context, not by the words alone."
+  },
+  {
+   "id": "p00224",
+   "func": "CTX_BENIGN",
+   "lang": "en",
+   "text": "get rid of all of them",
+   "parent": "the mosquitoes in my garden are getting worse",
+   "image_symbol": "heart",
+   "image_path": "images/p00224.png",
+   "label": 0,
+   "tokens": [
+    "get",
+    "rid",
+    "of",
+    "all",
+    "of",
+    "them"
+   ],
+   "ig": [
+    -1.764408606312457,
+    -0.736995799062964,
+    -0.2767884715610118,
+    1.3623020560076806,
+    0.06624192342224623,
+    -0.7013504573591424
+   ],
+   "rationale": [
+    0.5831570437977193,
+    0.8387689414293045,
+    0.7775485301661761,
+    0.854296735902561,
+    0.8045558932344146,
+    0.503437350631807
+   ],
+   "modality_phi": [
+    -1.0117125913255354,
+    -2.006335972113872,
+    -3.619898909667121
+   ],
+   "p": 0.0011252055575114413,
+   "explanation": "Prediction: NOT HATEFUL  (p_hate = 0.00)\nMost influential words (IG): all (+1.36), of (+0.07), of (-0.28), them (-0.70)\nModality contributions to the hate logit: text -1.01 (15%), image -2.01 (30%), context -3.62 (55%)\nNote: the decision is driven mainly by the context, not by the words alone."
+  },
+  {
+   "id": "p00038",
+   "func": "N_COUNTER",
+   "lang": "en",
+   "text": "calling trans people parasites is disgusting and wrong",
+   "parent": "saw this on my feed",
+   "image_symbol": "sun",
+   "image_path": "images/p00038.png",
+   "label": 0,
+   "tokens": [
+    "calling",
+    "trans",
+    "people",
+    "parasites",
+    "is",
+    "disgusting",
+    "and",
+    "wrong"
+   ],
+   "ig": [
+    -1.908405790331044,
+    0.6619840777385475,
+    -0.0028013032552197115,
+    0.05231096082208609,
+    -1.6299046453693549,
+    -1.2939381474193727,
+    -1.0791550964379657,
+    -1.0091707987801875
+   ],
+   "rationale": [
+    0.5188405374920987,
+    0.9149613230831617,
+    0.9119591422717288,
+    0.7718227115972682,
+    0.6031052683579361,
+    0.8191714839603311,
+    0.5156588175353424,
+    0.5548155583356822
+   ],
+   "modality_phi": [
+    -6.219955651275202,
+    0.3211448471200986,
+    -0.5772273454989387
+   ],
+   "p": 0.0013227029347494736,
+   "explanation": "Prediction: NOT HATEFUL  (p_hate = 0.00)\nMost influential words (IG): trans (+0.66), parasites (+0.05), people (-0.00), wrong (-1.01)\nModality contributions to the hate logit: text -6.22 (87%), image +0.32 (5%), context -0.58 (8%)\nTargeted identity mention(s): trans"
+  },
+  {
+   "id": "p00226",
+   "func": "H_THREAT",
+   "lang": "hien",
+   "text": "disabled people ko sabak sikhana padega someone do it omg",
+   "parent": "muslims naya community centre khol rahe hain",
+   "image_symbol": "circle",
+   "image_path": "images/p00226.png",
+   "label": 1,
+   "tokens": [
+    "disabled",
+    "people",
+    "ko",
+    "sabak",
+    "sikhana",
+    "padega",
+    "someone",
+    "do",
+    "it",
+    "omg"
+   ],
+   "ig": [
+    1.0608395778074442,
+    -0.049317125685830986,
+    0.13120058430922998,
+    1.996214740728942,
+    1.1780552326408436,
+    1.1599774718591476,
+    0.8597137260405403,
+    0.30011168278624534,
+    -0.5750253880592099,
+    -0.0026496444958903076
+   ],
+   "rationale": [
+    0.9275154786617497,
+    0.9455168090355724,
+    0.18914659655141225,
+    0.9214548072706246,
+    0.952171105388367,
+    0.8971126416168529,
+    0.6939722474782267,
+    0.6775106059423727,
+    0.5393494154674938,
+    0.3126317733628115
+   ],
+   "modality_phi": [
+    5.9346809340786075,
+    -1.412494288937867,
+    2.196792314136857
+   ],
+   "p": 0.9985977342799475,
+   "explanation": "Prediction: HATEFUL  (p_hate = 1.00)\nEvidence (model rationale): disabled people sabak sikhana padega someone do it\nMost influential words (IG): sabak (+2.00), sikhana (+1.18), padega (+1.16), disabled (+1.06)\nModality contributions to the hate logit: text +5.93 (62%), image -1.41 (15%), context +2.20 (23%)\nTargeted identity mention(s): disabled"
+  },
+  {
+   "id": "p00313",
+   "func": "H_DEROG",
+   "lang": "hi",
+   "text": "bhai ye isai deemak hn",
+   "parent": "pravasi naya samudayik kendra khol rahe hain",
+   "image_symbol": "square",
+   "image_path": "images/p00313.png",
+   "label": 1,
+   "tokens": [
+    "bhai",
+    "ye",
+    "isai",
+    "deemak",
+    "hn"
+   ],
+   "ig": [
+    0.4555860908153465,
+    1.7326419549972907,
+    0.7406436230041199,
+    1.591004193790066,
+    -0.9999200947368273
+   ],
+   "rationale": [
+    0.31642199363977924,
+    0.667939562502669,
+    0.8079469090965242,
+    0.7638696699022228,
+    0.12255330402371997
+   ],
+   "modality_phi": [
+    3.851002124923834,
+    -0.4293305007882454,
+    2.914047995839116
+   ],
+   "p": 0.997944140695539,
+   "explanation": "Prediction: HATEFUL  (p_hate = 1.00)\nEvidence (model rationale): ye isai deemak\nMost influential words (IG): ye (+1.73), deemak (+1.59), isai (+0.74), bhai (+0.46)\nModality contributions to the hate logit: text +3.85 (54%), image -0.43 (6%), context +2.91 (41%)\nTargeted identity mention(s): isai"
+  },
+  {
+   "id": "p00150",
+   "func": "H_IMPLICIT",
+   "lang": "en",
+   "text": "keep christians aawy from our neighbourhood #trending",
+   "parent": "weekend thoughts",
+   "image_symbol": "mark_b",
+   "image_path": "images/p00150.png",
+   "label": 1,
+   "tokens": [
+    "keep",
+    "christians",
+    "aawy",
+    "from",
+    "our",
+    "neighbourhood",
+    "#trending"
+   ],
+   "ig": [
+    0.9310685575662879,
+    0.9447347001412435,
+    0.1710414663856134,
+    0.6100587905220055,
+    0.4578892224408983,
+    0.9895926326388239,
+    0.2947091076909292
+   ],
+   "rationale": [
+    0.8508845925840902,
+    0.9622069568059569,
+    0.6061228854437809,
+    0.8555650813710376,
+    0.7749739829514711,
+    0.5652210634945857,
+    0.2882033733375485
+   ],
+   "modality_phi": [
+    4.401961600812482,
+    4.791255713463825,
+    0.6096895038919846
+   ],
+   "p": 0.9999357195406248,
+   "explanation": "Prediction: HATEFUL  (p_hate = 1.00)\nEvidence (model rationale): keep christians aawy from our neighbourhood\nMost influential words (IG): neighbourhood (+0.99), christians (+0.94), keep (+0.93), from (+0.61)\nModality contributions to the hate logit: text +4.40 (45%), image +4.79 (49%), context +0.61 (6%)\nTargeted identity mention(s): christians\nNote: the decision is driven mainly by the image, not by the words alone."
+  }
+ ]
+}

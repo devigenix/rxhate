@@ -1,0 +1,36 @@
+% acl.sty -- offline re-implementation of the ACL (ACL Rolling Review) camera-ready layout.
+% Geometry follows the official template: A4, two columns, 11pt Times, 2.5cm margins,
+% 0.6cm column gap, 15pt centred bold title.  For submission, replace this file with the
+% official acl.sty from https://github.com/acl-org/acl-style-files (no source changes needed).
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{acl}[2026/11/26 ACL-compatible layout]
+\newif\ifacl@review \acl@reviewfalse
+\DeclareOption{review}{\acl@reviewtrue}
+\DeclareOption{final}{\acl@reviewfalse}
+\ProcessOptions\relax
+\RequirePackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,columnsep=0.6cm]{geometry}
+\RequirePackage[round]{natbib}
+\RequirePackage{xcolor}
+\RequirePackage[colorlinks=true,citecolor={blue!50!black},linkcolor={blue!50!black},urlcolor={blue!50!black}]{hyperref}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\twocolumn
+\flushbottom
+\renewcommand{\@maketitle}{%
+  \vbox to 2.25in{\hsize\textwidth\linewidth\hsize\vfil
+  \begin{center}%
+    {\Large\bfseries \@title \par}\vskip 1.5em%
+    {\large\begin{tabular}[t]{c}\@author\end{tabular}\par}%
+  \end{center}\vfil}}
+\renewenvironment{abstract}{%
+  \centerline{\large\bfseries Abstract}\vspace{0.5ex}%
+  \begin{list}{}{\setlength{\rightmargin}{0.6cm}\setlength{\leftmargin}{0.6cm}}\item\relax\small}%
+  {\end{list}\vspace{0.5ex}}
+\renewcommand\section{\@startsection{section}{1}{\z@}{-2.0ex plus -0.5ex minus -.2ex}{1.5ex plus 0.3ex minus .2ex}{\large\bfseries\raggedright}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex plus -0.5ex minus -.2ex}{0.8ex plus .2ex}{\normalsize\bfseries\raggedright}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}{1.2ex plus 0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
+\renewcommand{\footnoterule}{\kern-3pt\hrule width 5pc\kern 2.6pt}
+\pagestyle{plain}
+\newcommand{\Thanks}[1]{\thanks{#1}}
+\bibliographystyle{plainnat}
+\endinput
