@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RX-Hate: Explainable, Reward-Optimised Hate Speech Detection</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:2rem 1.2rem;color:#1a1a1a}
+h1{font-size:1.8rem;margin-bottom:.2rem}h2{margin-top:2rem}
+.sub{color:#555}a{color:#0b5fff}.btn{display:inline-block;margin:.3rem .5rem .3rem 0;padding:.5rem 1rem;border:1px solid #0b5fff;border-radius:6px;text-decoration:none}
+.note{background:#fff7e0;border-left:4px solid #e0a800;padding:.7rem 1rem;margin:1.5rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:1rem}img{width:100%;border:1px solid #ddd;border-radius:6px}
+</style></head><body>
+<h1>RX-Hate</h1>
+<p class="sub">Hate speech detection through explainable AI and reward-optimised (GRPO) models. Bennett University project.</p>
+<a class="btn" href="rxhate.pdf">Paper (PDF)</a>
+<a class="btn" href="https://github.com/devigenix/rxhate">Source code</a>
+<div class="note"><b>Note:</b> all reported numbers come from the synthetic SynHateMM benchmark. The LLM (Qwen + GRPO) path and real-dataset runs have not been executed.</div>
+<h2>Idea</h2>
+<p>A multimodal policy (text, image, context) outputs a hate label plus token-level rationales. A second training stage uses GRPO with a composite reward: accuracy, fairness on identity mentions, rationale faithfulness, plausibility, and sparsity.</p>
+<h2>Figures</h2>
+<div class="grid">
+<img src="figures/grpo_curves.png" alt="GRPO training curves">
+<img src="figures/modality_shapley.png" alt="Modality Shapley values">
+<img src="figures/case_heatmaps.png" alt="Rationale heatmaps">
+<img src="figures/lowres.png" alt="Low-resource results">
+</div>
+</body></html>
